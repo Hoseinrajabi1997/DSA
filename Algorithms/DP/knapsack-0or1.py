@@ -21,7 +21,7 @@ def knap_sack_rec(profits, profits_length, weights, capacity, track, index):
     return track[index][capacity]
 
 if __name__ == '__main__':
-    profits = [10, 60, 40, 80]  # The values of the jewelry
-    weights = [1, 2, 3, 5]  # The weight of each
+    profits = [10, 60, 40, 80]  
+    weights = [1, 2, 3, 5] 
     print("Max Profit = ", knap_sack(profits, len(profits), weights, 7))
     print("Max Profit = ", knap_sack(profits, len(profits), weights, 6))
