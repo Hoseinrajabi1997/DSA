@@ -19,4 +19,7 @@ def lcs_rec(s1, s2, i, j, track):
     return track[i][j]
 
 
-print(lcs("www.educative.io/explore", "educative.io/edpresso"))
+if __name__ == '__main__':
+    s1 = "PythonRocks"
+    s2 = "PythonIsFun"
+    print(" LCS = ", lcs(s1, s2))
