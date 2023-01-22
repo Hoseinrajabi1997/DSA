@@ -28,6 +28,6 @@ def lcs(s1, s2):
 
 
 if __name__ == '__main__':
-    s1 = "abvcf"
-    s2 = "acb"
+    s1 = "C++Rocks"
+    s2 = "C++IsFun"
     print(" LCS = ", lcs(s1, s2))

@@ -6,11 +6,12 @@ def lcs(s1, s2):
 
 def lcs_rec(s1, s2, i, j, track):
     if i == len(s1) or j == len(s2):
+        print("end")
         return 0
 
     if track[i][j] != -1:
         return track[i][j]
-
+    print(s1[i], s2[j])
     if s1[i] == s2[j]:
         track[i][j] = 1 + lcs_rec(s1, s2, i + 1, j + 1, track)
     else:
@@ -20,6 +21,6 @@ def lcs_rec(s1, s2, i, j, track):
 
 
 if __name__ == '__main__':
-    s1 = "PythonRocks"
-    s2 = "PythonIsFun"
+    s1 = "ab"
+    s2 = "mnl"
     print(" LCS = ", lcs(s1, s2))
